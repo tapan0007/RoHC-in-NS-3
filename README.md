@@ -18,15 +18,6 @@ We are currently using a free and open source library for RoHC https://rohclib.
 org/ . Follow the
 instruction given in the documentation for the installation of the library.
 
-Patch the RoHC library with NS3
-Open “ABSOLUTEPATHTONS3/ src/lte/wscript” and add the
-dependencies for the RoHC library.
-bld.env.append_value("CXXFLAGS", "I/usr/include")
-bld.env.append_value("LINKFLAGS", ["L/usr/lib", "L/usr/lib/lrohc_decomp", "L/usr/lib/lrohc_comp","L/
-usr/lib/lrohc_common"])
-bld.env.append_value("LIB", ["rohc", "rohc_comp", "rohc_decomp", "rohc_common"])
-
-
 
 
 
